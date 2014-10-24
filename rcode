@@ -1,0 +1,9 @@
+## project
+install.packages("markdown")
+library(markdown)
+
+training <- read.csv(file = "pml-training.csv", header = TRUE)
+testing <- read.csv(file = "pml-testing.csv", header = TRUE)
+
+summary(training$classe)
+
